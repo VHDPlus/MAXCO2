@@ -1,0 +1,59 @@
+[
+  {
+    "directory": "C:\\Users\\LeonB\\Documents\\VHDPlus\\Projects\\MAXCO2\\Software\\NIOSDuino",
+    "arguments": [
+      "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
+      "-Iarduino",
+      "-Iarduino/Wire/src",
+      "-Iarduino/SPI/src",
+      "-Igenerated_bsp",
+      "-Igenerated_bsp/HAL/inc",
+      "-Igenerated_bsp/drivers/inc",
+      "-D__AVR__",
+      "-D__STDC__",
+      "-DARDUINO=185",
+      "-xc++",
+      "-std=gnu++11",
+      "scd30.h"
+    ],
+    "file": "scd30.h"
+  },
+  {
+    "directory": "C:\\Users\\LeonB\\Documents\\VHDPlus\\Projects\\MAXCO2\\Software\\NIOSDuino",
+    "arguments": [
+      "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
+      "-Iarduino",
+      "-Iarduino/Wire/src",
+      "-Iarduino/SPI/src",
+      "-Igenerated_bsp",
+      "-Igenerated_bsp/HAL/inc",
+      "-Igenerated_bsp/drivers/inc",
+      "-D__AVR__",
+      "-D__STDC__",
+      "-DARDUINO=185",
+      "-xc++",
+      "-std=gnu++11",
+      "NIOSDuino.cpp"
+    ],
+    "file": "NIOSDuino.cpp"
+  },
+  {
+    "directory": "C:\\Users\\LeonB\\Documents\\VHDPlus\\Projects\\MAXCO2\\Software\\NIOSDuino",
+    "arguments": [
+      "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
+      "-Iarduino",
+      "-Iarduino/Wire/src",
+      "-Iarduino/SPI/src",
+      "-Igenerated_bsp",
+      "-Igenerated_bsp/HAL/inc",
+      "-Igenerated_bsp/drivers/inc",
+      "-D__AVR__",
+      "-D__STDC__",
+      "-DARDUINO=185",
+      "-xc++",
+      "-std=gnu++11",
+      "scd30.cpp"
+    ],
+    "file": "scd30.cpp"
+  }
+]
