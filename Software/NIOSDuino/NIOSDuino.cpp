@@ -8,7 +8,6 @@ SCD30 scd30;
 void setup() {
     Serial0.begin(9600);
     
-    scd30.i2c_init();
     scd30.begin();
 }
 
