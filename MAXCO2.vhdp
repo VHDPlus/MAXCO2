@@ -17,18 +17,14 @@ Main
     
     NIOSDuino_i2c_sda_pull  : OUT STD_LOGIC;
     NIOSDuino_i2c_scl_pull  : OUT STD_LOGIC;
+    NIOSDuino_i2c_sel       : OUT STD_LOGIC;
     
     leds : out STD_LOGIC_VECTOR(2 downto 0);
-    
-    sda_deb : OUT STD_LOGIC;
-    scl_deb : OUT STD_LOGIC;
 )
 {
     NIOSDuino_i2c_scl_pull <= '1';
     NIOSDuino_i2c_sda_pull <= '1';
-    
-    sda_deb <= NIOSDuino_i2c_sda;
-    scl_deb <= NIOSDuino_i2c_scl;
+    NIOSDuino_i2c_sel      <= '0';
     
     leds <= NIOSDuino_po_export;
     

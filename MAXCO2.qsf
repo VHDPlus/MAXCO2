@@ -27,6 +27,8 @@ set_global_assignment -name TCL_SCRIPT_FILE Libraries/NIOSDuino/avalon_pwm_hw.tc
 set_global_assignment -name TCL_SCRIPT_FILE Libraries/NIOSDuino/avalon_pwm_sw.tcl
 set_global_assignment -name TCL_SCRIPT_FILE Libraries/NIOSDuino/avalon_pwm_hw.tcl
 set_global_assignment -name TCL_SCRIPT_FILE Libraries/NIOSDuino/avalon_pwm_sw.tcl
+set_global_assignment -name TCL_SCRIPT_FILE Libraries/NIOSDuino/avalon_pwm_hw.tcl
+set_global_assignment -name TCL_SCRIPT_FILE Libraries/NIOSDuino/avalon_pwm_sw.tcl
 set_global_assignment -name NUM_PARALLEL_PROCESSORS 8
 set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE"
 set_global_assignment -name VHDL_FILE Generated/MAXCO2.vhd
@@ -83,5 +85,4 @@ set_location_assignment PIN_A9 -to leds[1]
 set_location_assignment PIN_A11 -to leds[2]
 set_location_assignment PIN_M4 -to NIOSDuino_sdram_cs_n
 set_location_assignment PIN_M8 -to NIOSDuino_sdram_cke
-set_location_assignment PIN_K1 -to scl_deb
-set_location_assignment PIN_K2 -to sda_deb
+set_location_assignment PIN_K12 -to NIOSDuino_i2c_sel
