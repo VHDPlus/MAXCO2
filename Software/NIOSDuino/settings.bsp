@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>06.03.2021 20:49:45</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1615060185390</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>08.05.2021 16:48:53</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1620485333899</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>generated_bsp\</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\NIOSDuino_Core.sopcinfo</SopcDesignFile>
@@ -923,18 +923,6 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>pio_1</slaveDescriptor>
-                <addressRange>0x00000100 - 0x0000010F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>pio_2</slaveDescriptor>
-                <addressRange>0x00000300 - 0x0000031F</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>sdram_controller_0</slaveDescriptor>
                 <addressRange>0x00800000 - 0x00FFFFFF</addressRange>
                 <addressSpan>8388608</addressSpan>
@@ -951,6 +939,12 @@
                 <addressRange>0x01108000 - 0x0110FFFF</addressRange>
                 <addressSpan>32768</addressSpan>
                 <attributes>memory</attributes>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio_0</slaveDescriptor>
+                <addressRange>0x01111000 - 0x0111101F</addressRange>
+                <addressSpan>32</addressSpan>
+                <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>uart_0</slaveDescriptor>
@@ -992,6 +986,12 @@
                 <slaveDescriptor>i2c_0</slaveDescriptor>
                 <addressRange>0x01111180 - 0x011111BF</addressRange>
                 <addressSpan>64</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>spi_0</slaveDescriptor>
+                <addressRange>0x01111200 - 0x0111121F</addressRange>
+                <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <LinkerSection>

@@ -12,7 +12,8 @@ obj/default/arduino/SPI/src/SPI.o: arduino/SPI/src/SPI.cpp \
  arduino/avr/pgmspace.h arduino/avr/io.h arduino/avr/interrupt.h \
  arduino/binary.h arduino/WCharacter.h arduino/WString.h \
  arduino/HardwareSerial.h arduino/Stream.h arduino/Print.h \
- arduino/Printable.h arduino/GenericSerial.h arduino/pins_arduino.h
+ arduino/Printable.h arduino/GenericSerial.h arduino/pins_arduino.h \
+ generated_bsp//drivers/inc/altera_avalon_spi_regs.h
 
 arduino/SPI/src/SPI.h:
 
@@ -67,3 +68,5 @@ arduino/Printable.h:
 arduino/GenericSerial.h:
 
 arduino/pins_arduino.h:
+
+generated_bsp//drivers/inc/altera_avalon_spi_regs.h:

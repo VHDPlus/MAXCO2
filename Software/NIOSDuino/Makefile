@@ -145,6 +145,7 @@ ELF := NIOSDuino.elf
 C_SRCS += arduino/avr/eeprom.c
 C_SRCS += arduino/wiring_pulse.c
 C_SRCS += arduino/wiring_shift.c
+CXX_SRCS += Matrix/MAX7219_Dot_Matrix.cpp
 CXX_SRCS += NIOSDuino.cpp
 CXX_SRCS += arduino/GenericSerial.cpp
 CXX_SRCS += arduino/HardwareSerial.cpp

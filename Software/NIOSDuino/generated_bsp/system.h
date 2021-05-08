@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'NIOSDuino_Core'
  * SOPC Builder design path: ../../../NIOSDuino_Core.sopcinfo
  *
- * Generated: Sat Mar 06 20:49:46 CET 2021
+ * Generated: Sat May 08 16:48:55 CEST 2021
  */
 
 /*
@@ -138,6 +138,7 @@
 #define __ALTERA_AVALON_NEW_SDRAM_CONTROLLER
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
+#define __ALTERA_AVALON_SPI
 #define __ALTERA_AVALON_SYSID_QSYS
 #define __ALTERA_AVALON_TIMER
 #define __ALTERA_AVALON_UART
@@ -318,57 +319,30 @@
 
 
 /*
- * pio_1 configuration
+ * pio_0 configuration
  *
  */
 
-#define ALT_MODULE_CLASS_pio_1 altera_avalon_pio
-#define PIO_1_BASE 0x100
-#define PIO_1_BIT_CLEARING_EDGE_REGISTER 0
-#define PIO_1_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define PIO_1_CAPTURE 0
-#define PIO_1_DATA_WIDTH 32
-#define PIO_1_DO_TEST_BENCH_WIRING 0
-#define PIO_1_DRIVEN_SIM_VALUE 0
-#define PIO_1_EDGE_TYPE "NONE"
-#define PIO_1_FREQ 50000000
-#define PIO_1_HAS_IN 1
-#define PIO_1_HAS_OUT 0
-#define PIO_1_HAS_TRI 0
-#define PIO_1_IRQ -1
-#define PIO_1_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_1_IRQ_TYPE "NONE"
-#define PIO_1_NAME "/dev/pio_1"
-#define PIO_1_RESET_VALUE 0
-#define PIO_1_SPAN 16
-#define PIO_1_TYPE "altera_avalon_pio"
-
-
-/*
- * pio_2 configuration
- *
- */
-
-#define ALT_MODULE_CLASS_pio_2 altera_avalon_pio
-#define PIO_2_BASE 0x300
-#define PIO_2_BIT_CLEARING_EDGE_REGISTER 0
-#define PIO_2_BIT_MODIFYING_OUTPUT_REGISTER 1
-#define PIO_2_CAPTURE 0
-#define PIO_2_DATA_WIDTH 3
-#define PIO_2_DO_TEST_BENCH_WIRING 0
-#define PIO_2_DRIVEN_SIM_VALUE 0
-#define PIO_2_EDGE_TYPE "NONE"
-#define PIO_2_FREQ 50000000
-#define PIO_2_HAS_IN 0
-#define PIO_2_HAS_OUT 1
-#define PIO_2_HAS_TRI 0
-#define PIO_2_IRQ -1
-#define PIO_2_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_2_IRQ_TYPE "NONE"
-#define PIO_2_NAME "/dev/pio_2"
-#define PIO_2_RESET_VALUE 0
-#define PIO_2_SPAN 32
-#define PIO_2_TYPE "altera_avalon_pio"
+#define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
+#define PIO_0_BASE 0x1111000
+#define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 1
+#define PIO_0_CAPTURE 0
+#define PIO_0_DATA_WIDTH 16
+#define PIO_0_DO_TEST_BENCH_WIRING 0
+#define PIO_0_DRIVEN_SIM_VALUE 0
+#define PIO_0_EDGE_TYPE "NONE"
+#define PIO_0_FREQ 50000000
+#define PIO_0_HAS_IN 0
+#define PIO_0_HAS_OUT 0
+#define PIO_0_HAS_TRI 1
+#define PIO_0_IRQ -1
+#define PIO_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_0_IRQ_TYPE "NONE"
+#define PIO_0_NAME "/dev/pio_0"
+#define PIO_0_RESET_VALUE 0
+#define PIO_0_SPAN 32
+#define PIO_0_TYPE "altera_avalon_pio"
 
 
 /*
@@ -425,6 +399,37 @@
 
 
 /*
+ * spi_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_spi_0 altera_avalon_spi
+#define SPI_0_BASE 0x1111200
+#define SPI_0_CLOCKMULT 1
+#define SPI_0_CLOCKPHASE 0
+#define SPI_0_CLOCKPOLARITY 0
+#define SPI_0_CLOCKUNITS "Hz"
+#define SPI_0_DATABITS 8
+#define SPI_0_DATAWIDTH 16
+#define SPI_0_DELAYMULT "1.0E-9"
+#define SPI_0_DELAYUNITS "ns"
+#define SPI_0_EXTRADELAY 0
+#define SPI_0_INSERT_SYNC 0
+#define SPI_0_IRQ 6
+#define SPI_0_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define SPI_0_ISMASTER 1
+#define SPI_0_LSBFIRST 0
+#define SPI_0_NAME "/dev/spi_0"
+#define SPI_0_NUMSLAVES 1
+#define SPI_0_PREFIX "spi_"
+#define SPI_0_SPAN 32
+#define SPI_0_SYNC_REG_DEPTH 2
+#define SPI_0_TARGETCLOCK 128000u
+#define SPI_0_TARGETSSDELAY "0.0"
+#define SPI_0_TYPE "altera_avalon_spi"
+
+
+/*
  * sysid_qsys_0 configuration
  *
  */
@@ -436,7 +441,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1615059897
+#define SYSID_QSYS_0_TIMESTAMP 1620485105
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 

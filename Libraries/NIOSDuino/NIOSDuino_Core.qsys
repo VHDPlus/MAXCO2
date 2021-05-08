@@ -275,11 +275,11 @@
   </instanceScript>
   <interface name="clk_in" internal="clk_0.clk_in" type="clock" dir="end" />
   <interface name="i2c" internal="i2c_0.i2c_serial" type="conduit" dir="end" />
-  <interface name="pi" internal="pio_1.external_connection" type="conduit" dir="end" />
-  <interface name="po" internal="pio_2.external_connection" type="conduit" dir="end" />
+  <interface name="pio" internal="pio_0.external_connection" type="conduit" dir="end" />
   <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
   <interface name="sdram" internal="sdram_controller_0.wire" type="conduit" dir="end" />
   <interface name="sdram_clk" internal="pll.c1" type="clock" dir="start" />
+  <interface name="spi" internal="spi_0.external" type="conduit" dir="end" />
   <interface name="uart" internal="uart_0.external_connection" type="conduit" dir="end" />
   <module name="clk_0" kind="clock_source" version="18.1" enabled="1">
     <parameter name="clockFrequency" value="12000000" />
@@ -530,33 +530,19 @@
     <parameter name="useShallowMemBlocks" value="false" />
     <parameter name="writable" value="true" />
   </module>
-  <module name="pio_1" kind="altera_avalon_pio" version="18.1" enabled="1">
-    <parameter name="bitClearingEdgeCapReg" value="false" />
-    <parameter name="bitModifyingOutReg" value="false" />
-    <parameter name="captureEdge" value="false" />
-    <parameter name="clockRate" value="50000000" />
-    <parameter name="direction" value="Input" />
-    <parameter name="edgeType" value="RISING" />
-    <parameter name="generateIRQ" value="false" />
-    <parameter name="irqType" value="LEVEL" />
-    <parameter name="resetValue" value="0" />
-    <parameter name="simDoTestBenchWiring" value="false" />
-    <parameter name="simDrivenValue" value="0" />
-    <parameter name="width" value="32" />
-  </module>
-  <module name="pio_2" kind="altera_avalon_pio" version="18.1" enabled="1">
+  <module name="pio_0" kind="altera_avalon_pio" version="18.1" enabled="1">
     <parameter name="bitClearingEdgeCapReg" value="false" />
     <parameter name="bitModifyingOutReg" value="true" />
     <parameter name="captureEdge" value="false" />
     <parameter name="clockRate" value="50000000" />
-    <parameter name="direction" value="Output" />
+    <parameter name="direction" value="Bidir" />
     <parameter name="edgeType" value="RISING" />
     <parameter name="generateIRQ" value="false" />
     <parameter name="irqType" value="LEVEL" />
     <parameter name="resetValue" value="0" />
     <parameter name="simDoTestBenchWiring" value="false" />
     <parameter name="simDrivenValue" value="0" />
-    <parameter name="width" value="3" />
+    <parameter name="width" value="16" />
   </module>
   <module name="pll" kind="altpll" version="18.1" enabled="1">
     <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
@@ -750,6 +736,22 @@
     <parameter name="registerDataIn" value="true" />
     <parameter name="rowWidth" value="12" />
   </module>
+  <module name="spi_0" kind="altera_avalon_spi" version="18.1" enabled="1">
+    <parameter name="avalonSpec" value="2.0" />
+    <parameter name="clockPhase" value="0" />
+    <parameter name="clockPolarity" value="0" />
+    <parameter name="dataWidth" value="8" />
+    <parameter name="disableAvalonFlowControl" value="false" />
+    <parameter name="inputClockRate" value="50000000" />
+    <parameter name="insertDelayBetweenSlaveSelectAndSClk" value="false" />
+    <parameter name="insertSync" value="false" />
+    <parameter name="lsbOrderedFirst" value="false" />
+    <parameter name="masterSPI" value="true" />
+    <parameter name="numberOfSlaves" value="1" />
+    <parameter name="syncRegDepth" value="2" />
+    <parameter name="targetClockRate" value="128000" />
+    <parameter name="targetSlaveSelectToSClkDelay" value="0.0" />
+  </module>
   <module name="sysid_qsys_0" kind="altera_avalon_sysid_qsys" version="18.1" enabled="1">
     <parameter name="id" value="17149200" />
   </module>
@@ -826,6 +828,11 @@
     <parameter name="baseAddress" value="0x00800000" />
     <parameter name="defaultConnection" value="false" />
   </connection>
+  <connection kind="avalon" version="18.1" start="nios2_qsys_0.data_master" end="pio_0.s1">
+    <parameter name="arbitrationPriority" value="1" />
+    <parameter name="baseAddress" value="0x01111000" />
+    <parameter name="defaultConnection" value="false" />
+  </connection>
   <connection kind="avalon" version="18.1" start="nios2_qsys_0.data_master" end="uart_0.s1">
     <parameter name="arbitrationPriority" value="1" />
     <parameter name="baseAddress" value="0x011110a0" />
@@ -836,14 +843,9 @@
     <parameter name="baseAddress" value="0x01111140" />
     <parameter name="defaultConnection" value="false" />
   </connection>
-  <connection kind="avalon" version="18.1" start="nios2_qsys_0.data_master" end="pio_2.s1">
+  <connection kind="avalon" version="18.1" start="nios2_qsys_0.data_master" end="spi_0.spi_control_port">
     <parameter name="arbitrationPriority" value="1" />
-    <parameter name="baseAddress" value="0x0300" />
-    <parameter name="defaultConnection" value="false" />
-  </connection>
-  <connection kind="avalon" version="18.1" start="nios2_qsys_0.data_master" end="pio_1.s1">
-    <parameter name="arbitrationPriority" value="1" />
-    <parameter name="baseAddress" value="0x0100" />
+    <parameter name="baseAddress" value="0x01111200" />
     <parameter name="defaultConnection" value="false" />
   </connection>
   <connection kind="avalon" version="18.1" start="nios2_qsys_0.instruction_master" end="sysid_qsys_0.control_slave">
@@ -884,12 +886,12 @@
   <connection kind="clock" version="18.1" start="pll.c0" end="nios2_qsys_0.clk" />
   <connection kind="clock" version="18.1" start="pll.c0" end="sysid_qsys_0.clk" />
   <connection kind="clock" version="18.1" start="pll.c0" end="sdram_controller_0.clk" />
+  <connection kind="clock" version="18.1" start="pll.c0" end="pio_0.clk" />
   <connection kind="clock" version="18.1" start="pll.c0" end="uart_0.clk" />
   <connection kind="clock" version="18.1" start="pll.c0" end="timer_0.clk" />
   <connection kind="clock" version="18.1" start="pll.c0" end="jtag_uart_0.clk" />
+  <connection kind="clock" version="18.1" start="pll.c0" end="spi_0.clk" />
   <connection kind="clock" version="18.1" start="pll.c0" end="onchip_flash_0.clk" />
-  <connection kind="clock" version="18.1" start="pll.c0" end="pio_1.clk" />
-  <connection kind="clock" version="18.1" start="pll.c0" end="pio_2.clk" />
   <connection kind="clock" version="18.1" start="pll.c0" end="onchip_memory2_0.clk1" />
   <connection kind="clock" version="18.1" start="pll.c0" end="i2c_0.clock" />
   <connection kind="clock" version="18.1" start="clk_0.clk" end="pll.inclk_interface" />
@@ -905,16 +907,19 @@
   <connection kind="interrupt" version="18.1" start="nios2_qsys_0.irq" end="jtag_uart_0.irq">
     <parameter name="irqNumber" value="4" />
   </connection>
+  <connection kind="interrupt" version="18.1" start="nios2_qsys_0.irq" end="spi_0.irq">
+    <parameter name="irqNumber" value="6" />
+  </connection>
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="pll.inclk_interface_reset" />
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="onchip_flash_0.nreset" />
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="nios2_qsys_0.reset" />
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="sysid_qsys_0.reset" />
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="sdram_controller_0.reset" />
+  <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="pio_0.reset" />
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="uart_0.reset" />
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="timer_0.reset" />
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="jtag_uart_0.reset" />
-  <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="pio_1.reset" />
-  <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="pio_2.reset" />
+  <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="spi_0.reset" />
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="onchip_memory2_0.reset1" />
   <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="i2c_0.reset_sink" />
   <connection kind="reset" version="18.1" start="nios2_qsys_0.debug_reset_request" end="pll.inclk_interface_reset" />
@@ -922,9 +927,8 @@
   <connection kind="reset" version="18.1" start="nios2_qsys_0.debug_reset_request" end="nios2_qsys_0.reset" />
   <connection kind="reset" version="18.1" start="nios2_qsys_0.debug_reset_request" end="sysid_qsys_0.reset" />
   <connection kind="reset" version="18.1" start="nios2_qsys_0.debug_reset_request" end="sdram_controller_0.reset" />
+  <connection kind="reset" version="18.1" start="nios2_qsys_0.debug_reset_request" end="pio_0.reset" />
   <connection kind="reset" version="18.1" start="nios2_qsys_0.debug_reset_request" end="uart_0.reset" />
-  <connection kind="reset" version="18.1" start="nios2_qsys_0.debug_reset_request" end="pio_1.reset" />
-  <connection kind="reset" version="18.1" start="nios2_qsys_0.debug_reset_request" end="pio_2.reset" />
   <connection kind="reset" version="18.1" start="nios2_qsys_0.debug_reset_request" end="onchip_memory2_0.reset1" />
   <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
   <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />

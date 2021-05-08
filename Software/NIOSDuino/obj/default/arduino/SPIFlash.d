@@ -12,7 +12,8 @@ obj/default/arduino/SPIFlash.o: arduino/SPIFlash.cpp arduino/SPIFlash.h \
  arduino/binary.h arduino/WCharacter.h arduino/WString.h \
  arduino/HardwareSerial.h arduino/Stream.h arduino/Print.h \
  arduino/Printable.h arduino/GenericSerial.h arduino/pins_arduino.h \
- arduino/SPI/src/SPI.h
+ arduino/SPI/src/SPI.h \
+ generated_bsp//drivers/inc/altera_avalon_spi_regs.h
 
 arduino/SPIFlash.h:
 
@@ -69,3 +70,5 @@ arduino/GenericSerial.h:
 arduino/pins_arduino.h:
 
 arduino/SPI/src/SPI.h:
+
+generated_bsp//drivers/inc/altera_avalon_spi_regs.h:

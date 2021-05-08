@@ -10,26 +10,26 @@ Main
     NIOSDuino_sdram_ras_n   : OUT STD_LOGIC;
     NIOSDuino_sdram_we_n    : OUT STD_LOGIC;
     NIOSDuino_sdram_clk_clk : OUT STD_LOGIC;
+    
     NIOSDuino_uart_rxd      : IN STD_LOGIC := 'X';
     NIOSDuino_uart_txd      : OUT STD_LOGIC;
+    
     NIOSDuino_i2c_sda       : INOUT STD_LOGIC := 'Z';
     NIOSDuino_i2c_scl       : INOUT STD_LOGIC := 'Z';
-    
     NIOSDuino_i2c_sda_pull  : OUT STD_LOGIC;
     NIOSDuino_i2c_scl_pull  : OUT STD_LOGIC;
     NIOSDuino_i2c_sel       : OUT STD_LOGIC;
     
-    leds : out STD_LOGIC_VECTOR(2 downto 0);
+    NIOSDuino_pio_export    : INOUT STD_LOGIC_VECTOR (15 downto 0) := (others => 'X');
+    
+    NIOSDuino_spi_MISO      : IN STD_LOGIC := 'X';
+    NIOSDuino_spi_MOSI      : OUT STD_LOGIC;
+    NIOSDuino_spi_SCLK      : OUT STD_LOGIC;
 )
 {
     NIOSDuino_i2c_scl_pull <= '1';
     NIOSDuino_i2c_sda_pull <= '1';
     NIOSDuino_i2c_sel      <= '0';
-    
-    leds <= NIOSDuino_po_export;
-    
-    SIGNAL  NIOSDuino_pi_export     : STD_LOGIC_VECTOR (31 downto 0) := (others => 'X');
-    SIGNAL  NIOSDuino_po_export     : STD_LOGIC_VECTOR (2 downto 0) := (others => 'X');
     
     NewComponent NIOSDuino_Processor
     (
@@ -43,11 +43,13 @@ Main
         sdram_ras_n   => NIOSDuino_sdram_ras_n,
         sdram_we_n    => NIOSDuino_sdram_we_n,
         sdram_clk_clk => NIOSDuino_sdram_clk_clk,
-        pi_export     => NIOSDuino_pi_export,
-        po_export     => NIOSDuino_po_export,
+        pio_export    => NIOSDuino_pio_export,
         uart_rxd      => NIOSDuino_uart_rxd,
         uart_txd      => NIOSDuino_uart_txd,
         i2c_sda       => NIOSDuino_i2c_sda,
         i2c_scl       => NIOSDuino_i2c_scl,
+        spi_MISO      => NIOSDuino_spi_MISO,
+        spi_MOSI      => NIOSDuino_spi_MOSI,
+        spi_SCLK      => NIOSDuino_spi_SCLK,
     );
 }

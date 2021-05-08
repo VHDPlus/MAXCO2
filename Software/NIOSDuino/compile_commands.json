@@ -1,6 +1,6 @@
 [
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -12,25 +12,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
-      "-xc++",
-      "-std=gnu++11",
-      "scd30.h"
-    ],
-    "file": "scd30.h"
-  },
-  {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
-    "arguments": [
-      "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
-      "-Iarduino",
-      "-Iarduino/Wire/src",
-      "-Iarduino/SPI/src",
-      "-Igenerated_bsp",
-      "-Igenerated_bsp/HAL/inc",
-      "-Igenerated_bsp/drivers/inc",
-      "-D__AVR__",
-      "-D__STDC__",
-      "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "NIOSDuino.cpp"
@@ -38,7 +21,7 @@
     "file": "NIOSDuino.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -50,6 +33,29 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
+      "-xc++",
+      "-std=gnu++11",
+      "scd30.h"
+    ],
+    "file": "scd30.h"
+  },
+  {
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
+    "arguments": [
+      "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
+      "-Iarduino",
+      "-Iarduino/Wire/src",
+      "-Iarduino/SPI/src",
+      "-Igenerated_bsp",
+      "-Igenerated_bsp/HAL/inc",
+      "-Igenerated_bsp/drivers/inc",
+      "-D__AVR__",
+      "-D__STDC__",
+      "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "scd30.cpp"
@@ -57,7 +63,7 @@
     "file": "scd30.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -69,6 +75,71 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
+      "-xc++",
+      "-std=gnu++11",
+      "Matrix/MAX7219_Dot_Matrix.cpp"
+    ],
+    "file": "Matrix/MAX7219_Dot_Matrix.cpp"
+  },
+  {
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
+    "arguments": [
+      "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
+      "-Iarduino",
+      "-Iarduino/Wire/src",
+      "-Iarduino/SPI/src",
+      "-Igenerated_bsp",
+      "-Igenerated_bsp/HAL/inc",
+      "-Igenerated_bsp/drivers/inc",
+      "-D__AVR__",
+      "-D__STDC__",
+      "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
+      "-xc++",
+      "-std=gnu++11",
+      "Matrix/MAX7219_Dot_Matrix.h"
+    ],
+    "file": "Matrix/MAX7219_Dot_Matrix.h"
+  },
+  {
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
+    "arguments": [
+      "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
+      "-Iarduino",
+      "-Iarduino/Wire/src",
+      "-Iarduino/SPI/src",
+      "-Igenerated_bsp",
+      "-Igenerated_bsp/HAL/inc",
+      "-Igenerated_bsp/drivers/inc",
+      "-D__AVR__",
+      "-D__STDC__",
+      "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
+      "-xc++",
+      "-std=gnu++11",
+      "Matrix/MAX7219_Dot_Matrix_font.h"
+    ],
+    "file": "Matrix/MAX7219_Dot_Matrix_font.h"
+  },
+  {
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
+    "arguments": [
+      "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
+      "-Iarduino",
+      "-Iarduino/Wire/src",
+      "-Iarduino/SPI/src",
+      "-Igenerated_bsp",
+      "-Igenerated_bsp/HAL/inc",
+      "-Igenerated_bsp/drivers/inc",
+      "-D__AVR__",
+      "-D__STDC__",
+      "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Adafruit_Sensor.h"
@@ -76,7 +147,7 @@
     "file": "arduino/Adafruit_Sensor.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -88,6 +159,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Arduino.h"
@@ -95,7 +168,7 @@
     "file": "arduino/Arduino.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -107,6 +180,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Client.h"
@@ -114,7 +189,7 @@
     "file": "arduino/Client.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -126,6 +201,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/EEPROM.h"
@@ -133,7 +210,7 @@
     "file": "arduino/EEPROM.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -145,6 +222,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/GenericSerial.cpp"
@@ -152,7 +231,7 @@
     "file": "arduino/GenericSerial.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -164,6 +243,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/GenericSerial.h"
@@ -171,7 +252,7 @@
     "file": "arduino/GenericSerial.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -183,6 +264,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/HardwareSerial.cpp"
@@ -190,7 +273,7 @@
     "file": "arduino/HardwareSerial.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -202,6 +285,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/HardwareSerial.h"
@@ -209,7 +294,7 @@
     "file": "arduino/HardwareSerial.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -221,6 +306,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/HardwareSerial0.cpp"
@@ -228,7 +315,7 @@
     "file": "arduino/HardwareSerial0.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -240,6 +327,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/HardwareSerial1.cpp"
@@ -247,7 +336,7 @@
     "file": "arduino/HardwareSerial1.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -259,6 +348,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/HardwareSerial2.cpp"
@@ -266,7 +357,7 @@
     "file": "arduino/HardwareSerial2.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -278,6 +369,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/HardwareSerial3.cpp"
@@ -285,7 +378,7 @@
     "file": "arduino/HardwareSerial3.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -297,6 +390,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/IPAddress.cpp"
@@ -304,7 +399,7 @@
     "file": "arduino/IPAddress.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -316,6 +411,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/IPAddress.h"
@@ -323,7 +420,7 @@
     "file": "arduino/IPAddress.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -335,6 +432,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Print.cpp"
@@ -342,7 +441,7 @@
     "file": "arduino/Print.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -354,6 +453,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Print.h"
@@ -361,7 +462,7 @@
     "file": "arduino/Print.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -373,6 +474,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Printable.h"
@@ -380,7 +483,7 @@
     "file": "arduino/Printable.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -392,6 +495,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/SPIFlash.cpp"
@@ -399,7 +504,7 @@
     "file": "arduino/SPIFlash.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -411,6 +516,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/SPIFlash.h"
@@ -418,7 +525,7 @@
     "file": "arduino/SPIFlash.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -430,6 +537,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Server.h"
@@ -437,7 +546,7 @@
     "file": "arduino/Server.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -449,6 +558,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Stream.cpp"
@@ -456,7 +567,7 @@
     "file": "arduino/Stream.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -468,6 +579,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Stream.h"
@@ -475,7 +588,7 @@
     "file": "arduino/Stream.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -487,6 +600,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Udp.h"
@@ -494,7 +609,7 @@
     "file": "arduino/Udp.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -506,6 +621,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/WCharacter.h"
@@ -513,7 +630,7 @@
     "file": "arduino/WCharacter.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -525,6 +642,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/WMath.cpp"
@@ -532,7 +651,7 @@
     "file": "arduino/WMath.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -544,6 +663,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/WString.cpp"
@@ -551,7 +672,7 @@
     "file": "arduino/WString.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -563,6 +684,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/WString.h"
@@ -570,7 +693,7 @@
     "file": "arduino/WString.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -582,6 +705,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/avalon_pwm_regs.h"
@@ -589,7 +714,7 @@
     "file": "arduino/avalon_pwm_regs.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -601,6 +726,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/binary.h"
@@ -608,7 +735,7 @@
     "file": "arduino/binary.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -620,6 +747,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/main.cpp"
@@ -627,7 +756,7 @@
     "file": "arduino/main.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -639,6 +768,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/pins_arduino.h"
@@ -646,7 +777,7 @@
     "file": "arduino/pins_arduino.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -658,6 +789,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/wiring_analog.cpp"
@@ -665,7 +798,7 @@
     "file": "arduino/wiring_analog.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -677,6 +810,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/wiring_digital.cpp"
@@ -684,7 +819,7 @@
     "file": "arduino/wiring_digital.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -696,6 +831,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/wiring_pulse.c"
@@ -703,7 +840,7 @@
     "file": "arduino/wiring_pulse.c"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -715,6 +852,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/wiring_shift.c"
@@ -722,7 +861,7 @@
     "file": "arduino/wiring_shift.c"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -734,6 +873,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/SPI/src/SPI.cpp"
@@ -741,7 +882,7 @@
     "file": "arduino/SPI/src/SPI.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -753,6 +894,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/SPI/src/SPI.h"
@@ -760,7 +903,7 @@
     "file": "arduino/SPI/src/SPI.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -772,6 +915,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Wire/src/Wire.cpp"
@@ -779,7 +924,7 @@
     "file": "arduino/Wire/src/Wire.cpp"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -791,6 +936,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/Wire/src/Wire.h"
@@ -798,7 +945,7 @@
     "file": "arduino/Wire/src/Wire.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -810,6 +957,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/avr/eeprom.c"
@@ -817,7 +966,7 @@
     "file": "arduino/avr/eeprom.c"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -829,6 +978,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/avr/eeprom.h"
@@ -836,7 +987,7 @@
     "file": "arduino/avr/eeprom.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -848,6 +999,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/avr/interrupt.h"
@@ -855,7 +1008,7 @@
     "file": "arduino/avr/interrupt.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -867,6 +1020,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/avr/io.h"
@@ -874,7 +1029,7 @@
     "file": "arduino/avr/io.h"
   },
   {
-    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\Software\\NIOSDuino",
+    "directory": "C:\\Users\\LeonB\\Documents\\GitHub\\MAXCO2\\MAXCO2_Matrix\\Software\\NIOSDuino",
     "arguments": [
       "C:\\intelFPGA_lite\\18.1\\nios2eds\\bin\\gnu\\H-x86_64-mingw32\\bin\\nios2-elf-gcc.exe",
       "-Iarduino",
@@ -886,6 +1041,8 @@
       "-D__AVR__",
       "-D__STDC__",
       "-DARDUINO=185",
+      "-D__builtin_ldwio(a)=0",
+      "-D__builtin_stwio(a,b)=0",
       "-xc++",
       "-std=gnu++11",
       "arduino/avr/pgmspace.h"
